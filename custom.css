@@ -1,3 +1,232 @@
+.custom-pos-static .elementor-container, .custom-pos-static .elementor-column, .custom-pos-static .elementor-widget-wrap { position: static; }
+.custom-phone:hover .porto-sicon-header p { color: #1c5fa8 !important; }
+.elementor-container, .elementor-row { flex-wrap: wrap; }
+#nav-panel .container { padding: 0; }
+/* Page Header */
+.page-top .page-title { font-size: 32px; font-weight: 700; }
+/* menu */
+.mega-menu .popup li.menu-item:not(:last-child) { border-bottom: 1px solid #f7f7f7; }
+.mega-menu .narrow li.menu-item>a { padding: 6.5px 18px; }
+.main-sidebar-menu li.menu-item>a { text-transform: none !important; }
+/* intro slider */
+.btn.btn-full-rounded { border-radius: 12px; }
+.custom-bg-white::after { content: ''; display: block !important; position: absolute; top: 50%; right: 75%; width: 100vw; height: calc( 100% + 150px); background: #FFF; z-index: 0; transform: translate3d(0, -50%, 0); }   
+.custom-svg-1 { position: absolute; left: 0; top: -100px; width: 640px; }
+.custom-btn-arrow i { display: inline-block !important; transition: transform .3s; }
+.custom-btn-arrow i::before { content: '\e8cc'; font-family: "porto"; }
+.custom-btn-arrow .btn:hover i { transform: translateX(5px); }
+@keyframes kenBurnsToRight {
+	from {
+		transform: scale(1.2);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+.kenBurnsToRight { animation-name: kenBurnsToRight; animation-timing-function: linear; transform-origin: right; animation-duration: 30s; }
+@keyframes customLineAnim {
+  from {
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+  }
+  to {
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 1600;
+  } 
+}
+.customLineAnim { animation-name: customLineAnim; animation-duration: 1s; }
+@keyframes customLineAnim2 {
+  from {
+    stroke-dasharray: 2650;
+    stroke-dashoffset: 2650;
+  }
+  to {
+    stroke-dasharray: 2650;
+    stroke-dashoffset: 0;
+  }
+}
+.customLineAnim2 { animation-name: customLineAnim2; animation-duration: 1s;  }
+@keyframes customLineProgressAnim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+.fadeIn.customLineProgressAnim .elementor-divider-separator { animation-name: customLineProgressAnim; animation-duration: 1s; }
+.custom-intro-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+/* Auto equipment */
+.auto-1 { top: 26%; left: 7%; }
+.auto-2 { top: 32%; left: 85%; }
+.auto-3 { top: 87%; left: 19%; }
+.transform3dxy-n50 { position: absolute; transform: translate3d(-50%, -50%, 0); }
+.custom-view-more .porto-sicon-default { display: flex; align-items: center; justify-content: center; width: 43.19px; height: 43.19px; margin-right: 4px; }
+.custom-icon-style-1 .porto-icon { position: relative; display: inline-flex !important; align-items: center; justify-content: center; width: 95px; height: 95px; }
+.custom-icon-style-1 .porto-icon::before { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; border: 2px solid #1c5fa8; border-radius: 7px; transform: rotate(45deg); z-index: 0; transition: ease background 300ms; }
+.custom-service-1 .porto-sicon-box-link:hover h3 { color: #1c5fa8 !important; }
+.custom-service-1 .porto-sicon-box-link:hover svg { fill: #fff !important; transition: fill .2s; position: relative; z-index: 2; }
+.custom-service-1 .porto-sicon-box-link:hover .porto-icon::before { background-color: #1c5fa8; transition: background-color .2s; }
+/* Proudly Serving */
+.custom-svg-background-1 { position: absolute; width: 1000%; top: 0; left: 50%; height: 100%; transform: translate3d(-50%, 0, 0); }
+.custom-parallax-section .porto-wrap-container, .custom-parallax-section .col-md-12 { position: static; }
+/* Custom seriver gallery */
+.custom-service-gallery .porto-sicon-box img { width: 100%; border-radius: inherit !important; }
+.custom-service-gallery .porto-sicon-img { width: calc( 100% - 10px ) !important; overflow: hidden; border-radius: 21px; border: 5px solid transparent; transition: ease border .3s, transform .3s;  }
+.custom-service-gallery .porto-sicon-box:hover .porto-sicon-img { border-color: #1c5fa8; }
+.custom-service-gallery .porto-sicon-box:hover .porto-sicon-title { color: #1c5fa8 !important; }
+
+/* separator */
+.custom-separator-1 hr { width: 50px; }
+.custom-separator.text-center hr { margin: 0 auto !important; }
+/* FAQs */
+.faq { box-shadow: none; border: 1px solid transparent; border-radius: 4px; overflow: hidden; transition: border .3s; }
+.faq .toggle { padding-bottom: 18px; }
+.porto-faqs .toggle-content { padding: 2rem; border: 1px solid #CCC; border-top: 0; background: #fff; }
+.faq .toggle:not(.active):hover label { color: #1c5fa8; }
+.faq label { margin: -1px; }
+.porto-faqs .faq label { display: block; position: relative; padding: 23px 30px; font-size: 1rem; font-weight: 700; letter-spacing: -.05em; line-height: 27px;  border-left-width: 0; color: #212529; }
+.faq .toggle.actie label { background-color: #00a1cd; color: #fff !important; }
+.faq label::before { content: '+'; position: absolute; top: 50%; right: 25px; margin-top: 0 !important; font-size: inherit; font-weight: inherit; transform: translate3d(0, -50%, 0) rotate(0deg); transform-origin: 50% 50%; transition: ease transform 300ms; border-width: 0 !important; }
+.toggle.active>label:before { right: 25px; transform: translate3d(0, -50%, 0) rotate(45deg); }
+.custom-svg-2 { position: absolute; top: 43%; left: -260px; width: 190px; transform: translate3d(0, -50%, 0); }
+/* Testimonial */
+.elementor-testimonial-meta { margin-bottom: 1px; }
+.elementor-testimonial-content { padding: 5px 20px; margin-bottom: 16px !important; }
+.elementor-testimonial-content:before { content: "\f10d"; position: absolute; left: 2.7rem; top: 1.8rem;  color: #1c5fa8; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 20px; }
+.owl-carousel.nav-style-1 .owl-nav [class*="owl-"] { font-size: 33px; }
+.owl-carousel.nav-pos-outside .owl-nav .owl-prev { left: -50px; }
+.owl-carousel.nav-pos-outside .owl-nav .owl-next { right: -48px; }
+.owl-carousel.nav-style-1 .owl-nav [class*="owl-"] { color: #212529; }
+
+/* Lightbox */
+.gallery-icon { position: relative; }
+.gallery-icon a:hover::before { opacity: 1; }
+.gallery-icon a::before { content: ""; transition: 0.2s; background: rgba(0, 0, 0, 0.65); position: absolute; width: 100%; height: 100%; left: 0; top: 0; opacity: 0; z-index: 2; }
+.gallery-icon a::after { content: "\f067"; display: block; position: absolute; height: 30px; top: 30%; margin-top: -15px; text-align: center; width: 100%; font-size: 18px; transition: 0.2s; font-family: "Font Awesome 5 Free"; font-weight: 900; color: #fff; z-index: 3; opacity: 0; }
+.gallery-icon a:hover::after { top: 50%; opacity: 1; }
+.gallery-icon img { width: 100%; }
+/* Product Default */
+.product-image .labels .onsale, .summary-before .labels .onsale { background-color: #dc3545; }
+.product-image { border-width: 0; }
+ul.products { margin-bottom: 10px; }
+ul.products .category-list { margin-bottom: 4px; font-size: 0.7em; line-height: 1; }
+ul.products li.product-col h3 { font-size: 1.1em; letter-spacing: -.05em; line-height: 21px; }
+.price { font-weight: 500; }
+.star-rating { font-size: 12px; }
+.price del { color: #777; }
+.add-links .quickview { font-size: 12.6px; font-weight: 600; }
+li.product-col .product-image .inner::before { transition: all 0.2s; content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #212121; width: 100%; height: 100%; opacity: 0; z-index: 2; }
+li.product-col:hover .product-image .inner::before { opacity: .1; }
+/* shop page*/
+.post-type-archive-product .product-image { border: 1px solid #ddd; }
+.post-type-archive-product ul.products .product-col { padding-left: 10px; padding-right: 10px; }
+.post-type-archive-product ul.products { margin-left: -10px; margin-right: -10px; }
+.woocommerce-ordering select, .woocommerce-viewing select { height: 43px; }
+.shop-loop-before { margin-bottom: 15px; }
+.woocommerce-pagination ul li a, .woocommerce-pagination ul li span { height: 35px; padding: .5rem .75rem; line-height: 1.25; color: #1c5fa8; font-size: 14px; font-weight: 400; border-color: rgba(0, 0, 0, 0.06); }
+.woocommerce-pagination ul li span.current { color: #fff; background: #1c5fa8;  }
+.woocommerce-pagination ul li { margin-left: 0; }
+.woocommerce-pagination ul li .prev:before, .woocommerce-pagination ul li .next:before { line-height: 35px; }
+.woocommerce-pagination ul li a:hover, .woocommerce-pagination ul li a:focus { background-color: #e9ecef; border-color: #dee2e6; }
+/* Blog page */
+.left-sidebar, .right-sidebar, .main-content { margin: 48px 0; padding-top: 24px; padding-bottom: 24px; }
+.blog .sidebar-content, .archive.category .sidebar-content { padding: 0 16px; }
+article.post .post-image img { border-radius: 7px; }
+.sidebar-content .widget .widget-title { font-size: 1.5em; letter-spacing: -.05em; margin-bottom: 16px; }
+.sidebar-content #searchform #s, .sidebar-content .widget_search .btn-dark { height: 45px; font-size: 11.2px; }
+.sidebar-content .widget + .widget { padding-top: 37px; }
+.widget_recent_entries .post-date { line-height: 26px; }
+.widget_recent_entries > ul li > a, .widget_recent_comments > ul li > a { font-weight: 700; line-height: 19.6px; }
+.widget_categories > ul li > a { font-size: 12.6px; font-weight: 400; line-height: 20px; color: #666; }
+.porto-blog-sidebar .widget_categories .cat-item a { display: inline-block; padding: 8px 0 8px 22px !important; }
+.porto-blog-sidebar .widget_categories .cat-item a::before { margin-left: 0; font-family: 'Font Awesome 5 Free'; content: "\f054"; font-weight: 900; position: absolute; top: 9px; font-size: 7.2px; font-size: 0.45rem; opacity: 0.7; transform: translate3d(-1px,0,0); left: 12px; }
+.posts-modern .post .post-meta { font-size: .8em; margin: .5rem 0; line-height: 26px; order: -1; }
+.posts-modern .post .entry-title { margin-bottom: .5rem; padding-bottom: .25rem; font-size: 1.5em; font-weight: 700; letter-spacing: -.05em; line-height: 27px; }
+.posts-modern .post-content { display: flex; flex-direction: column; }
+.posts-modern .post-image, .posts-modern .post-image .owl-carousel { margin-bottom: .5rem !important; }
+.posts-modern .post-excerpt { margin-bottom: .4rem; font-size: 14px; font-weight: 400; letter-spacing: 0; line-height: 26px; }
+.posts-modern .post .btn-readmore { display: inline-block; position: relative; padding: 0.533rem 0.933rem 0.533rem 0; font-size: 1em !important; font-weight: 600; letter-spacing: normal; line-height: 1.5; border: 1px solid transparent; color: #1c5fa8; background: transparent; }
+.blog .widget .widget-title { color: #383f48; }
+.widget li.current-cat, .widget li.current-cat>a, .widget li.current-cat-parent, .widget li.current-cat-parent>a, .widget li.current-menu-item>a { font-weight: 700; color: #666; }
+.pagination { margin-top: 0 }
+.pagination .page-numbers { min-width: 40px; height: 40px; line-height: 38px; font-weight: 400; background: #fff; border: none; font-size: 1rem; color: #1c5fa8; border: 1px solid rgba(0,0,0,0.06) }
+.pagination .page-numbers:hover { background-color: #e9ecef; border-color: #dee2e6 }
+.single-post .breadcrumb li:nth-child(3) { display: none; }
+@media (min-width: 992px) { 
+    .w-lg-100pct { width: 100% !important; }
+    .blog .main-content.col-lg-9, .archive.category .main-content.col-lg-9 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+    .blog .sidebar.col-lg-3, .archive.category .sidebar.col-lg-3 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+}
+@media (min-width: 1230px) {
+    .custom-carousel-box-shadow-1:before { content: ''; position: absolute; top: 50%; left: 50%; width: 65%; height: 0px; box-shadow: 0 0 40px 120px rgba(0, 0, 0, 0.07); transform: translate3d(-50%, -50%, 0); z-index: 0; }
+    .custom-icon-style-1 .porto-sicon-title { padding-left: 48px; padding-right: 48px; }
+}
+@media (max-width: 1229px) {
+    .elementor-testimonial-content:before { left: 1.5rem; }
+    .owl-carousel.nav-pos-outside .owl-nav .owl-prev { left: 6px; }
+    .owl-carousel.nav-pos-outside .owl-nav .owl-next { right: 10px; }
+}
+@media(max-width: 991px) and (min-width: 480px) {
+    .elementor-image-gallery .gallery.gallery-columns-4 .gallery-item { max-width: 50%; width: 50%; }
+}
+@media(max-width: 991px) {
+    .custom-auto-img { margin: 0 auto; }
+    .custom-svg-background-1 { left: 77%; }
+    .auto-3 { top: 81%; }
+    .auto-1 { top: 17%; left: 22%; }
+    .custom-svg-1 { left: -75px; top: -60px; }
+    .w-lg-max { width: 100% !important; }
+    .custom-view-more .porto-sicon-box { justify-content: center; }
+    .custom-view-more .only-left .porto-sicon-box { justify-content: normal; }
+}
+@media(max-width: 767px) {
+    .w-md-max { width: 100% !important; }
+}
+@media(max-width: 575px) {
+    .porto-faqs .faq label { padding-left: 25px; padding-right: 25px; }
+    .custom-view-more .porto-sicon-box { border-left-width: 0 !important; }
+    .custom-section-background .elementor-widget-wrap { background-image: none !important; background-color: #FFF; }
+}
+.container-fluid .elementor-top-section { padding-left: 30px !important; padding-right: 30px !important; }
+@media (max-width: 480px) {
+    .container-fluid .elementor-top-section { padding-left: 20px !important; padding-right: 20px !important; }
+}
+
+/* Page header */
+.page-wrapper .woo-page-header{
+	display:none;
+	
+}
+/* Link (hover) */
+.elementor-element-a66f9c2 .elementor-container .elementor-top-column .elementor-widget-wrap .elementor-widget-nav-menu .elementor-widget-container .elementor-nav-menu--layout-horizontal .elementor-nav-menu .menu-item a:hover{
+	background-color:#238bbf;
+	color:#f9f9f9;
+	
+}
+
+/* Button */
+.actions .wl-cic-actions .wl-cic-update-cart-button{
+	border-style:none;
+}
+/* Division */
+.elementor-element-7a81354 .porto-sicon-box .porto-just-icon-wrapper{
+	width:50px;
+	height:50px;
+	
+}
+/* Elementor item */
+.elementor-widget-container .elementor-nav-menu--layout-horizontal .elementor-nav-menu .menu-item:nth-child(6) .elementor-item{
+	background-color:#238bbf;
+	color:#f9f9f9;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+	
+}
+
 .elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-472c255{
   display: none;
 }
